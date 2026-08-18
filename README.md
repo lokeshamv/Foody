@@ -227,7 +227,7 @@ Installation
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/foody.git
+https://github.com/lokeshamv/Foody
 
 2. Import the project into Eclipse as a Java/JEE web project.
 
