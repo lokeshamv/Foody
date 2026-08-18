@@ -1,0 +1,670 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f8f8f8;
+
+    color:#333;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+
+    height:80px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 60px;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#ff5200;
+
+}
+
+.menu{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.menu a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:#ff5200;
+
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container{
+
+    width:90%;
+
+    margin:40px auto;
+
+}
+
+.container h1{
+
+    font-size:40px;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   CART CARD
+=========================== */
+
+.cart-card{
+
+    background:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.cart-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   FOOD IMAGE
+=========================== */
+
+.food-image img{
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:15px;
+
+    object-fit:cover;
+
+}
+
+/* ===========================
+   FOOD DETAILS
+=========================== */
+
+.food-details{
+
+    flex:1;
+
+    margin-left:30px;
+
+}
+
+.food-details h2{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.restaurant{
+
+    color:#666;
+
+    margin-bottom:10px;
+
+    font-size:17px;
+
+}
+
+.price{
+
+    color:#ff5200;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+/* ===========================
+   QUANTITY
+=========================== */
+
+.quantity{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.quantity a{
+
+    width:40px;
+
+    height:40px;
+
+    background:#ff5200;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.quantity a:hover{
+
+    background:#e64a19;
+
+    transform:scale(1.08);
+
+}
+
+.quantity span{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    min-width:30px;
+
+    text-align:center;
+
+}
+
+
+
+/* ===========================
+   ITEM TOTAL
+=========================== */
+
+.item-total{
+
+    text-align:right;
+
+}
+
+.item-total h3{
+
+    color:#ff5200;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.remove{
+
+    text-decoration:none;
+
+    color:#e53935;
+
+    font-weight:600;
+
+}
+
+.remove:hover{
+
+    color:#b71c1c;
+
+}
+
+
+
+/* ===========================
+   ORDER SUMMARY
+=========================== */
+
+.cart-summary{
+
+    background:#fff;
+
+    margin-top:40px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.summary-left{
+
+    flex:1;
+
+}
+
+.summary-left h2{
+
+    margin-bottom:25px;
+
+}
+
+.summary-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+.grand-total{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:20px;
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:#ff5200;
+
+}
+
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.summary-buttons{
+
+    width:280px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.summary-buttons a{
+
+    text-decoration:none;
+
+}
+
+.shop,
+
+.clear-btn,
+
+.checkout-btn{
+
+    width:100%;
+
+    text-align:center;
+
+    display:block;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.shop{
+
+    background:#2196F3;
+
+    color:#fff;
+
+    border:none;
+
+}
+
+.shop:hover{
+
+    background:#1976D2;
+
+}
+
+.clear-btn{
+
+    background:#f44336;
+
+    color:#fff;
+
+}
+
+.clear-btn:hover{
+
+    background:#d32f2f;
+
+}
+
+.checkout-btn{
+
+    background:#ff5200;
+
+    color:#fff;
+
+}
+
+.checkout-btn:hover{
+
+    background:#e64a19;
+
+}
+
+
+
+/* ===========================
+   EMPTY CART
+=========================== */
+
+.empty-cart{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.empty-cart img{
+
+    width:260px;
+
+    margin-bottom:30px;
+
+}
+
+.empty-cart h2{
+
+    font-size:36px;
+
+    margin-bottom:15px;
+
+}
+
+.empty-cart p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+.continue-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#ff5200;
+
+    color:#fff;
+
+    padding:16px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+}
+
+.continue-btn:hover{
+
+    background:#e64a19;
+
+}
+
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#1b1b1b;
+
+    color:#ddd;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:60px;
+
+}
+
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.cart-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.food-details{
+
+margin:20px 0;
+
+}
+
+.item-total{
+
+text-align:center;
+
+margin-top:20px;
+
+}
+
+.cart-summary{
+
+flex-direction:column;
+
+}
+
+.summary-buttons{
+
+width:100%;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+height:auto;
+
+padding:20px;
+
+}
+
+.menu{
+
+margin-top:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.food-image img{
+
+width:120px;
+
+height:120px;
+
+}
+
+.container h1{
+
+font-size:32px;
+
+}
+
+.summary-row{
+
+font-size:16px;
+
+}
+
+.grand-total{
+
+font-size:22px;
+
+}
+
+}
+
+
+
+@media(max-width:480px){
+
+.logo{
+
+font-size:26px;
+
+}
+
+.menu{
+
+gap:15px;
+
+}
+
+.food-details h2{
+
+font-size:22px;
+
+}
+
+.price{
+
+font-size:20px;
+
+}
+
+.quantity span{
+
+font-size:18px;
+
+}
+
+}
+
